@@ -1,0 +1,155 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 40px;
+  background: #1e3a8a;
+  color: white;
+}
+
+.navbar a {
+  margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.logo {
+  font-size: 22px;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: #e0e7ff;
+}
+
+.hero h2 {
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+/* Buttons */
+.btn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 6px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+/* Timeline */
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.event-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.event-card span {
+  display: block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: bold;
+}
+
+/* Speakers */
+.speakers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+.speaker-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.speaker-card img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+/* Form */
+.form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form input,
+.form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db;
+}
+
+/* Footer */
+.footer {
+  background: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.socials a {
+  margin: 0 10px;
+  color: #c7d2fe;
+  text-decoration: none;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .hero h2 {
+    font-size: 28px;
+  }
+}
